@@ -1,0 +1,43 @@
+
+  
+
+
+
+<form action="">
+    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+</form>
+
+  <div class="container" >
+ 
+    <div class="row" >
+        <div class="col-4" *ngFor="let articulo of articulos">
+           <div class="card" >
+               <img 
+               title="{{articulo.nombre}}"
+               alt="titulo"
+               class="card-img-top" 
+               [src]="articulo.imagen" 
+               >
+               <div class="card-body">
+                   <span>{{articulo.nombre}}</span>
+                   <h5 class="card-title">{{articulo.precio}}</h5>
+                   <p class="card-text">{{articulo.descripcion}}</p>
+                  
+               </div>
+           </div>
+           <button  name="btnAccion" value="Agregar" type="button"
+           class="btn btn-warning btn-sm mx-2" routerLink="ed/{{articulo.idarticulo}}">
+               Ver Carrito
+           </button>
+        </div>
+    </div>
+  </div>
+
+           
+           
+          
+             
+
+      
+        
+    

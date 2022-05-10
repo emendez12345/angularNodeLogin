@@ -1,0 +1,86 @@
+.container{
+    position:absolute;
+    height: 500px;
+    width: 700px;
+    margin-right: 600px;
+    left: 50px;
+}
+.container  p  {
+    text-align: right;
+    margin-top: auto;
+    position:absolute;
+    top: 120px;
+    right: 135px;;
+    width:250px;
+}
+.container input {
+
+    text-align: right;
+    margin-top: auto;
+    top: 210px;
+    position:absolute;
+    right: 140px;
+    width:40px;
+}
+.container a{
+    text-align: right;
+    margin-top: auto;
+    top: 400px;
+    position:absolute;
+    right: 110px;
+    width:90px;
+}
+
+.container label {
+
+    text-align: right;
+    margin-top: auto;
+    top: 210px;
+    position:absolute;
+    right: 190px;
+    width:200px;
+}
+.container  .precio {
+
+    text-align: right;
+    margin-top: auto;
+    top: 50px;
+    position:absolute;
+    right: -30px;
+    width:120px;
+}
+.container  h5  {
+    text-align: right;
+    margin-top: auto;
+    position:absolute;
+    top: 50px;;
+    right: 150px;;
+    width:250px;
+}
+
+.container h3{
+    text-align: right;
+    top: 20px;;
+    right: 90px;;
+    width:250px;
+}
+
+.container img{
+    height: 400px;
+    width: 400px;
+  
+
+}
+
+.container2{
+    position:absolute;
+    top: 80px;;
+    right: 90px;;
+    width:250px;
+   
+}
+
+.container2 img{
+    height: 350px;
+    width: 300px;
+}

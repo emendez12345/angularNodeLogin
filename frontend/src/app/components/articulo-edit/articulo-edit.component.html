@@ -1,0 +1,43 @@
+
+
+
+<div class="container" >
+    <div class="card mb-3">
+        <h3>Carrito Compras</h3>
+        <img class="card-img-top" [src]="articuloser.imagen" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{articulo.nombre}}</h5>
+          
+          <p class="card-text" >{{articulo.descripcion}}</p>
+          
+
+          <div class="cantidad">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" >
+          </div>
+
+          <div class="precio">
+            
+            <label for="precio">Precio:${{articulo.precio}}</label>
+          </div>
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+        
+        </div>
+      </div>
+    
+</div>
+
+<div class="container2" >
+    <div class="card" style="width: 18rem;" *ngFor="let articulo of articulos">
+        <img class="card-img-top" [src]="articulo.imagen" alt="Card image cap">
+        <h5 class="card-title">{{articulo.nombre}}</h5>
+        <div class="card-body" >
+          <p class="card-text">Los mejores productos</p>
+        </div>
+    
+      </div>
+     
+</div>
+
+

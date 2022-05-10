@@ -1,0 +1,26 @@
+
+img {
+   
+    justify-content: space-between;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+   
+}
+
+.barra-busqueda{
+    position:absolute;
+    top: 80px;;
+    right: 190px;;
+    width:250px;
+}
+
+.container{
+    position: absolute;
+    top:200px;
+    right:-1px;
+}
+
+
+
+

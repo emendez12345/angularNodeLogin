@@ -1,0 +1,18 @@
+<form (ngSubmit)="updateCategoria()">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" class="form-control" [(ngModel)]="categoria.nombre">
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripcion</label>
+        <input type="text" name="descripcion" class="form-control" [(ngModel)]="categoria.descripcion">
+    </div>
+    <div class="form-group">
+        <label for="number">Condicion</label>
+        <input type="number" name="condicion" class="form-control" [(ngModel)]="categoria.condicion">
+    </div>
+
+    <button class="btn btn-dark btn-sm mt-4" routerLink="categorias">Update</button>
+</form>
+
+

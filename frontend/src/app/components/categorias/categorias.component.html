@@ -1,0 +1,42 @@
+<form (ngSubmit)="insertData()">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" class="form-control" [(ngModel)]="categoria.nombre">
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripcion</label>
+        <input type="text" name="descripcion" class="form-control" [(ngModel)]="categoria.descripcion">
+    </div>
+    <div class="form-group">
+        <label for="number">Condicion</label>
+        <input type="number" name="condicion" class="form-control" [(ngModel)]="categoria.condicion">
+    </div>
+
+    <button class="btn btn-dark btn-sm mt-4">Submit</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Condicion</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let categoria of categorias">
+            <th scope="row">{{categoria.idcategoria}}</th>
+            <td >{{categoria.nombre}}</td>
+            <td >{{categoria.descripcion}}</td>
+            <td >{{categoria.condicion}}</td>
+            <td>
+                <button class="btn btn-danger btn-sm" (click)="deleteData(categoria.idcategoria)">Eliminar</button>
+                <button class="btn btn-warning btn-sm mx-2" routerLink="ed/{{categoria.idcategoria}}">Editar</button> 
+                    
+            </td>     
+        </tr>
+    </tbody>
+</table>
+
